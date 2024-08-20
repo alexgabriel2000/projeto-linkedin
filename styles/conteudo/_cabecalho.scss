@@ -1,0 +1,71 @@
+@use './components/variaveis';
+
+header {
+    background-color: variaveis.$cor-secundaria;
+    position: relative;
+    font-family: variaveis.$font-principal;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 9px 0;
+
+        .cabecalho__pesquisa {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding-right: 92px;
+            padding-left: 120px;
+
+            input {
+                width: 280px;
+                height: 34px;
+                background-color: variaveis.$fundo-input;
+                border: none;
+                border-radius: 5px;
+                font-size: 14px;
+            }
+
+            .cabecalho__input {
+                padding: 0 0.5rem;
+                color: white;
+                &::placeholder {
+                    padding-left: 1.7rem;
+                    background: url(/assets/search.svg);
+                    background-repeat: no-repeat;
+                    color: variaveis.$branco-90;
+                }
+            }
+        }
+
+        .cabecalho__lista {
+            display: flex;
+            margin-right: auto;
+            gap: 5px;
+
+            li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                .cabecalho__linha-vertical {
+                    position: absolute;
+                    top: 0;
+                    height: 100%;
+                    width: 2px;
+                }
+                img {
+                    width: 20px;
+                    height: 20px;
+                }
+                a {
+                    width: 80px;
+                    font-size: 12px;
+                    text-decoration: none;
+                    text-align: center;
+                    color: variaveis.$branco-90;
+                }
+            }
+        }
+    }
+}

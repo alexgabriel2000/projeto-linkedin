@@ -1,0 +1,13 @@
+@use './components/variaveis';
+
+main {
+    display: grid;
+    grid-template-columns: 780px 320px;
+    grid-template-rows: 468px 312px 371px 134px 358px 127px 178px;
+    justify-content: center;
+    font-family: variaveis.$font-principal;
+
+    .section-perfil {
+        grid-area: 1 / 1;
+    }
+}

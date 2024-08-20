@@ -1,0 +1,77 @@
+@use './components/variaveis';
+@use './components/mixins';
+
+main {
+    .section-perfil {
+        background: url(/assets/Imagem\ de\ capa.svg);
+        background-repeat: no-repeat;
+        background-color: variaveis.$fundo-secundaria;
+        border-radius: 16px;
+        padding: 7.5rem 0 0 1.5rem;
+        margin-top: 1rem;
+
+        .perfil-detalhes {
+            display: grid;
+            grid-template-columns: 60% 40%;
+            padding-top: 0.5rem;
+            
+            .perfil-detalhes-list li {
+                line-height: 1.3rem;
+
+                .span-color {
+                    color: variaveis.$branco-90;
+                    font-weight: 600;
+                }
+                p {
+                    font-size: 24px;
+                    color: variaveis.$branco-90;
+                    font-weight: 500;
+                }
+                span {
+                    @include mixins.font-gray;
+                }
+                a {
+                    @include mixins.font-blue;
+                    text-decoration: none;
+                }
+            }
+
+            .perfil-detalhes-carreira {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                    padding-left: 2rem;
+
+                    .perfil-link {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+
+                        p {
+                            font-weight: 600;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .perfil-button-group {
+                button {
+                    width: 128px;
+                    height: 28px;
+                    border-radius: 16px;
+                    font-size: 14px;
+                }
+                .button-blue {
+                    background-color: variaveis.$font-azul;
+                    border: none;
+                }
+                .button-transparent {
+                    background-color: transparent;
+                    border: 1px solid variaveis.$font-azul;
+                    color: variaveis.$font-azul;
+                }
+            } 
+        }
+    }
+}

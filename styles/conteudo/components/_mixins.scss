@@ -1,0 +1,12 @@
+@use './variaveis';
+
+@mixin font-gray {
+    font-size: 14px;
+    color: variaveis.$branco-60;
+}
+
+@mixin font-blue {
+    font-size: 14px;
+    color: variaveis.$font-azul;
+    font-weight: bold;
+}
