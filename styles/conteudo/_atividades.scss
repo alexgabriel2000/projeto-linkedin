@@ -1,0 +1,63 @@
+@use './components/mixins';
+@use './components/variaveis';
+
+.section-atividades {
+    @include mixins.br-bg-mt;
+
+    h2 {
+        @include mixins.font-white-20-90;
+        padding: 16px 0 0 24px;
+    }
+    a {
+        text-decoration: none;
+        padding: 0 0 0 24px;
+        color: variaveis.$font-azul;
+        font-size: 14px;
+    }
+    p {
+        @include mixins.font-gray;
+        padding-left: 24px;
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 24px 8px 24px;
+        
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+            span {
+                @include mixins.font-gray;
+            }
+        }
+    }
+    hr {
+        width: 93.5%;
+        margin: auto;
+        margin-bottom: 8px;
+        border-color: variaveis.$branco-60;
+    }
+    .atividades-align {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 24px;
+
+        img {
+            width: 64px;
+            height: 64px;
+        }
+        p {
+            @include mixins.font-white-14-100;
+            padding: 0;
+        }
+    }
+    .atividades-exibir {
+        text-align: center;
+        padding-top: 8px;
+    }
+}

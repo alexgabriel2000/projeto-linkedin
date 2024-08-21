@@ -44,7 +44,7 @@ header nav .cabecalho__lista {
   margin-right: auto;
   gap: 5px;
 }
-header nav .cabecalho__lista li {
+header nav .cabecalho__lista li a {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,9 +77,15 @@ main {
 main .section-perfil {
   grid-area: 1/1;
 }
+main .section-destaques {
+  grid-area: 2/1;
+}
+main .section-atividades {
+  grid-area: 3/1;
+}
 
 main .section-perfil {
-  background: url(/assets/Imagem\ de\ capa.svg);
+  background: url(./assets/Imagem-de-capa.svg);
   background-repeat: no-repeat;
   background-color: #1B2226;
   border-radius: 16px;
@@ -143,6 +149,121 @@ main .section-perfil .perfil-detalhes .perfil-button-group .button-transparent {
   background-color: transparent;
   border: 1px solid #70B5F9;
   color: #70B5F9;
+}
+
+.section-destaques {
+  border-radius: 16px;
+  background-color: #1B2226;
+  margin-top: 8px;
+}
+.section-destaques h2 {
+  padding: 16px 0 8px 24px;
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8078431373);
+}
+.section-destaques .destaques-align {
+  display: flex;
+  justify-content: space-evenly;
+}
+.section-destaques .destaques-align .destaques-publi {
+  border: 1px solid rgba(255, 255, 255, 0.5568627451);
+  width: 238px;
+  height: auto;
+  padding: 0.5rem 0;
+  border-radius: 5px;
+}
+.section-destaques .destaques-align .destaques-publi h3 {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5568627451);
+  padding-bottom: 5px;
+  padding-left: 14px;
+}
+.section-destaques .destaques-align .destaques-publi p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8078431373);
+  padding-bottom: 5px;
+  padding-left: 14px;
+}
+.section-destaques .destaques-align .destaques-publi img {
+  width: 100%;
+}
+.section-destaques .destaques-align .destaques-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.section-destaques .destaques-align .destaques-list li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.section-destaques .destaques-align .destaques-list li span {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+.section-destaques .destaques-align .destaques-list li img {
+  width: 32px;
+}
+
+.section-atividades {
+  border-radius: 16px;
+  background-color: #1B2226;
+  margin-top: 8px;
+}
+.section-atividades h2 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8078431373);
+  padding: 16px 0 0 24px;
+}
+.section-atividades a {
+  text-decoration: none;
+  padding: 0 0 0 24px;
+  color: #70B5F9;
+  font-size: 14px;
+}
+.section-atividades p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5568627451);
+  padding-left: 24px;
+}
+.section-atividades ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px 8px 24px;
+}
+.section-atividades ul li {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.section-atividades ul li span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+.section-atividades hr {
+  width: 93.5%;
+  margin: auto;
+  margin-bottom: 8px;
+  border-color: rgba(255, 255, 255, 0.5568627451);
+}
+.section-atividades .atividades-align {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 24px;
+}
+.section-atividades .atividades-align img {
+  width: 64px;
+  height: 64px;
+}
+.section-atividades .atividades-align p {
+  font-size: 14px;
+  color: white;
+  padding: 0;
+}
+.section-atividades .atividades-exibir {
+  text-align: center;
+  padding-top: 8px;
 }
 
 * {

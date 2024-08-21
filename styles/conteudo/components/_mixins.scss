@@ -5,8 +5,29 @@
     color: variaveis.$branco-60;
 }
 
+@mixin font-gray-min {
+    font-size: 12px;
+    color: variaveis.$branco-60;
+}
+
 @mixin font-blue {
     font-size: 14px;
     color: variaveis.$font-azul;
     font-weight: bold;
+}
+
+@mixin font-white-20-90 {
+    font-size: 20px;
+    color: variaveis.$branco-90;
+}
+
+@mixin font-white-14-100 {
+    font-size: 14px;
+    color: white;
+}
+
+@mixin br-bg-mt {
+    border-radius: 16px;
+    background-color: variaveis.$fundo-secundaria;
+    margin-top: 8px;
 }

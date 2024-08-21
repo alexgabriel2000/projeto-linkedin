@@ -44,9 +44,11 @@ header {
             gap: 5px;
 
             li {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+                a {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
 
                 .cabecalho__linha-vertical {
                     position: absolute;

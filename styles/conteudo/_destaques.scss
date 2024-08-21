@@ -1,0 +1,55 @@
+@use './components/mixins';
+@use './components/variaveis';
+
+.section-destaques {
+    @include mixins.br-bg-mt;
+
+    h2 {
+        padding: 16px 0 8px 24px;
+        @include mixins.font-white-20-90;
+    }
+    .destaques-align {
+        display: flex;
+        justify-content: space-evenly;
+        
+        .destaques-publi {
+            border: 1px solid variaveis.$branco-60;
+            width: 238px;
+            height: auto;
+            padding: 0.5rem 0;
+            border-radius: 5px;
+    
+            h3 {
+                @include mixins.font-gray-min;
+                padding-bottom: 5px;
+                padding-left: 14px;
+            }
+            p {
+                font-size: 14px;
+                color: variaveis.$branco-90;
+                padding-bottom: 5px;
+                padding-left: 14px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .destaques-list {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li {
+                display: flex;
+                align-items: center;
+                gap: 5px;
+                span {
+                    @include mixins.font-gray-min;
+                }
+                img {
+                    width: 32px;
+                }
+            }
+        }
+    }
+    
+}
