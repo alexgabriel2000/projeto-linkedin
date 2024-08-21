@@ -54,6 +54,7 @@
         p {
             @include mixins.font-white-14-100;
             padding: 0;
+            line-height: 1.3rem;
         }
     }
     .atividades-exibir {

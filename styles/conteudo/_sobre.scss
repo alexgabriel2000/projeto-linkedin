@@ -2,10 +2,15 @@
 @use './components/variaveis';
 
 .section-sobre {
+    @include mixins.br-bg-mt;
+
     h2 {
-        
+        padding: 16px 0 8px 24px;
+        @include mixins.font-white-20-90;
     }
     p {
-
+        padding: 0 24px;
+        @include mixins.font-white-14-100;
+        line-height: 1.3rem;
     }
 }
