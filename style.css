@@ -70,7 +70,7 @@ header nav .cabecalho__lista li a {
 main {
   display: grid;
   grid-template-columns: 780px 320px;
-  grid-template-rows: 468px 312px 371px 134px 358px 127px 178px;
+  grid-template-rows: 468px 312px 371px 134px 368px 127px 178px;
   justify-content: center;
   font-family: "Roboto", sans-serif;
 }
@@ -85,6 +85,9 @@ main .section-atividades {
 }
 main .section-sobre {
   grid-area: 4/1;
+}
+main .experiencias {
+  grid-area: 5/1;
 }
 
 main .section-perfil {
@@ -285,6 +288,73 @@ main .section-perfil .perfil-detalhes .perfil-button-group .button-transparent {
   font-size: 14px;
   color: white;
   line-height: 1.3rem;
+}
+
+.experiencias {
+  border-radius: 16px;
+  background-color: #1B2226;
+  margin-top: 8px;
+  padding: 16px 0 0 24px;
+}
+.experiencias h2 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.8078431373);
+  padding-bottom: 8px;
+}
+.experiencias .experiencias-logo-empresa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.experiencias .experiencias-logo-empresa img {
+  width: 48px;
+}
+.experiencias .experiencias-empresa p {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.8078431373);
+}
+.experiencias .experiencias-empresa span {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+.experiencias .experiencias-icones {
+  display: flex;
+}
+.experiencias .experiencias-icones .experiencias-icones-align {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48px;
+}
+.experiencias .experiencias-icones .experiencias-icones-align .experiencias-circulo {
+  width: 9px;
+  padding: 9px 0;
+}
+.experiencias .experiencias-icones .experiencias-icones-align .experiencias-linha {
+  width: 1px;
+}
+.experiencias .experiencias-icones ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding-top: 4px;
+  padding-left: 8px;
+}
+.experiencias .experiencias-icones ul li:nth-child(1) {
+  color: rgba(255, 255, 255, 0.8078431373);
+  font-weight: 600;
+}
+.experiencias .experiencias-icones ul li:nth-child(2) {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8078431373);
+}
+.experiencias .experiencias-icones ul li:nth-child(3) {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+.experiencias .experiencias-icones ul li:nth-child(4) {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5568627451);
 }
 
 * {

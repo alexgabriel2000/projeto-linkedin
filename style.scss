@@ -6,6 +6,7 @@
 @use './styles/conteudo/destaques';
 @use './styles/conteudo/atividades';
 @use './styles/conteudo/sobre';
+@use './styles/conteudo/experiencias';
 
 
 * {
@@ -19,3 +20,4 @@ body {
     background-color: variaveis.$cor-de-fundo;
     color: white;
 }
+

@@ -1,0 +1,74 @@
+@use './components/mixins';
+@use './components/variaveis';
+
+.experiencias {
+    @include mixins.br-bg-mt;
+    padding: 16px 0 0 24px;
+
+    h2 {
+        @include mixins.font-white-20-90;
+        padding-bottom: 8px;
+    }
+    .experiencias-logo-empresa {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        img {
+            width: 48px;
+        }
+    }
+    .experiencias-empresa {
+        p {
+            font-size: 16px;
+            color: variaveis.$branco-90;
+        }
+        span {
+            @include mixins.font-gray;
+        }
+        
+    }
+    .experiencias-icones {
+        display: flex;
+
+
+        .experiencias-icones-align {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 48px;
+            
+            .experiencias-circulo {
+                width: 9px;
+                padding: 9px 0;
+            }
+            .experiencias-linha {
+                width: 1px;
+            }
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1px;
+            padding-top: 4px;
+            padding-left: 8px;
+
+            li {
+                &:nth-child(1) {
+                    color: variaveis.$branco-90;
+                    font-weight: 600;
+                }
+                &:nth-child(2) {
+                    font-size: 14px;
+                    color: variaveis.$branco-90;
+                }
+                &:nth-child(3) {
+                    @include mixins.font-gray;
+                }
+                &:nth-child(4) {
+                    @include mixins.font-gray;
+                }
+            }
+        }
+    }
+}

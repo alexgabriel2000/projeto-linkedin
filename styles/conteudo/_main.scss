@@ -3,7 +3,7 @@
 main {
     display: grid;
     grid-template-columns: 780px 320px;
-    grid-template-rows: 468px 312px 371px 134px 358px 127px 178px;
+    grid-template-rows: 468px 312px 371px 134px 368px 127px 178px;
     justify-content: center;
     font-family: variaveis.$font-principal;
 
@@ -22,4 +22,10 @@ main {
     .section-sobre {
         grid-area: 4 / 1;
     }
+
+    .experiencias {
+        grid-area: 5 / 1;
+    }
+
 }
+
